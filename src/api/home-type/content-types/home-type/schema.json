@@ -13,6 +13,12 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "care_homes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::care-home.care-home",
+      "mappedBy": "care_home_type"
     }
   }
 }

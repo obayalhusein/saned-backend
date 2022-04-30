@@ -43,6 +43,12 @@
     },
     "location_url": {
       "type": "string"
+    },
+    "care_home_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::home-type.home-type",
+      "inversedBy": "care_homes"
     }
   }
 }
