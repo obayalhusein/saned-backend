@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "care_homes",
+  "info": {
+    "singularName": "care-home",
+    "pluralName": "care-homes",
+    "displayName": "care_home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "phone": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "city": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::city.city",
+      "inversedBy": "care_homes"
+    },
+    "area": {
+      "type": "string"
+    },
+    "location_url": {
+      "type": "string"
+    }
+  }
+}
