@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "residents",
+  "info": {
+    "singularName": "resident",
+    "pluralName": "residents",
+    "displayName": "resident",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "care_home": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::care-home.care-home"
+    },
+    "gender": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gender.gender"
+    }
+  }
+}
