@@ -49,12 +49,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::home-type.home-type"
-    },
-    "donation": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::donation.donation",
-      "inversedBy": "care_home"
     }
   }
 }

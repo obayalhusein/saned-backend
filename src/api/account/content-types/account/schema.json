@@ -37,12 +37,6 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::account-type.account-type"
-    },
-    "donations": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::donation.donation",
-      "mappedBy": "account"
     }
   }
 }

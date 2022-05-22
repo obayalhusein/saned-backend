@@ -4,33 +4,31 @@
   "info": {
     "singularName": "donation",
     "pluralName": "donations",
-    "displayName": "donation"
+    "displayName": "donation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "account": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::account.account",
-      "inversedBy": "donations"
-    },
     "amount": {
       "type": "decimal"
-    },
-    "credit": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::credit.credit",
-      "inversedBy": "donations"
     },
     "care_home": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::care-home.care-home",
-      "inversedBy": "donation"
+      "target": "api::care-home.care-home"
+    },
+    "account": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::account.account"
+    },
+    "credit": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::credit.credit"
     }
   }
 }
