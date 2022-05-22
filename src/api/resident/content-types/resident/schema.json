@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "birthday": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "care_home": {
       "type": "relation",
@@ -29,7 +31,8 @@
       "target": "api::gender.gender"
     },
     "join_date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     }
   }
 }

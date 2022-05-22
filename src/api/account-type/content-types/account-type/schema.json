@@ -4,7 +4,8 @@
   "info": {
     "singularName": "account-type",
     "pluralName": "account-types",
-    "displayName": "account_type"
+    "displayName": "account_type",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "role": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

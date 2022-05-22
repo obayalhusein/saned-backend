@@ -4,7 +4,8 @@
   "info": {
     "singularName": "report",
     "pluralName": "reports",
-    "displayName": "report"
+    "displayName": "report",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,13 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "phone": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "account": {
       "type": "relation",

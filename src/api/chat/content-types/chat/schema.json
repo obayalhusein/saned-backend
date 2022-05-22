@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "message": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "replier": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     },
     "care_home": {
       "type": "relation",

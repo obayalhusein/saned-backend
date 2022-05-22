@@ -25,7 +25,8 @@
       ]
     },
     "phone": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "website": {
       "type": "string"
@@ -37,16 +38,10 @@
       "inversedBy": "care_homes"
     },
     "area": {
-      "type": "string"
-    },
-    "location_url": {
-      "type": "string"
-    },
-    "email": {
-      "type": "email",
+      "type": "string",
       "required": true
     },
-    "password": {
+    "location_url": {
       "type": "string",
       "required": true
     },
@@ -54,6 +49,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::home-type.home-type"
+    },
+    "donation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::donation.donation",
+      "inversedBy": "care_home"
     }
   }
 }

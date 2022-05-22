@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "event"
+    "displayName": "event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,13 +13,15 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
       "type": "text"
     },
     "date": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
     "care_home": {
       "type": "relation",
@@ -26,14 +29,15 @@
       "target": "api::care-home.care-home"
     },
     "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
